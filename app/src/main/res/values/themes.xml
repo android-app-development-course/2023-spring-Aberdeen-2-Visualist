@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.Visualist" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
-<!--        状态栏的颜色-->
+<!--        被选中的颜色-->
         <item name="colorPrimary">@color/black</item>
 <!--        变化的颜色·导航栏-->
         <item name="colorPrimaryVariant">@color/black</item>

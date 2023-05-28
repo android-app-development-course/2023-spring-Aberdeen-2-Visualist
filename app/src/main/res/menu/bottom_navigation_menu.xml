@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_camera"
+        android:title="camera"
+        android:icon="@drawable/ic_camera_white" />
+    <item
+        android:id="@+id/navigation_forum"
+        android:title="forum"
+        android:icon="@drawable/ic_forum_white" />
+    <item
+        android:id="@+id/navigation_store"
+        android:title="store"
+        android:icon="@drawable/ic_store_white" />
+    <item
+        android:id="@+id/navigation_home"
+        android:title="home"
+        android:icon="@drawable/ic_home" />
+</menu>

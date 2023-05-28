@@ -1,9 +1,11 @@
 package com.example.visualist
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.fragment.app.Fragment
 
 
@@ -20,6 +22,13 @@ class StoreFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // 在这里可以对布局中的控件进行操作和设置事件监听器
+        // 跳转到相机详情页
+        val pic1 = view.findViewById<ImageView>(R.id.camera2)
+        pic1.setOnClickListener {
+            val intent = Intent(getActivity(), details1::class.java)
+            startActivity(intent)
+        }
+
+
     }
 }

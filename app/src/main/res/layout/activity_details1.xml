@@ -33,9 +33,12 @@
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                app:layout_collapseMode="pin" />
+                android:layout_width="68dp"
+                android:layout_height="50dp"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                app:contentInsetStartWithNavigation="0dp"
+                />
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
 
@@ -78,22 +81,41 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp" />
 
-
-
-
-
             </com.google.android.material.card.MaterialCardView>
+
 
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:src="@drawable/ic_home"
-        app:layout_anchor="@id/appBar"
-        app:layout_anchorGravity="bottom|end" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|bottom">
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/RoundedButtonGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="+购物车"
+                app:backgroundTint="@color/gray" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/RoundedButtonGray"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="直接购买"
+                app:backgroundTint="@color/black" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

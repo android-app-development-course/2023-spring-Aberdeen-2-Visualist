@@ -86,8 +86,10 @@
 
         </LinearLayout>
 
+
     </androidx.core.widget.NestedScrollView>
 
+    <!--            +购物车/直接购买按钮-->
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -98,6 +100,7 @@
             android:gravity="center_horizontal|bottom">
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/addCart"
                 style="@style/RoundedButtonGray"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -106,6 +109,7 @@
                 app:backgroundTint="@color/gray" />
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/buyDirectly"
                 style="@style/RoundedButtonGray"
                 android:layout_width="191dp"
                 android:layout_height="wrap_content"
@@ -118,4 +122,39 @@
 
     </FrameLayout>
 
+<!--    +购物车/直接购买操作完成后显示标识-->
+    <!-- Snackbar 容器 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <!-- 这里将显示添加成功的标识 -->
+        <ImageView
+            android:id="@+id/successAddImageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:src="@drawable/finishadding"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 这里将显示购买成功的标识 -->
+        <ImageView
+            android:id="@+id/successBuyImageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:src="@drawable/finishbuying"/>
+
+    </FrameLayout>
+
+
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
+

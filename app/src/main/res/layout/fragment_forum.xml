@@ -7,4 +7,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="forum"/>
-</RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="170dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/picture1" />
+
+</androidx.cardview.widget.CardView>
+
+    </RelativeLayout>

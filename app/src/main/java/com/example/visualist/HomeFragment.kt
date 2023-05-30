@@ -34,5 +34,12 @@ class HomeFragment : Fragment() {
             val intent = Intent(getActivity(), historyDownload::class.java)
             startActivity(intent)
         }
+
+        //点击审核进度
+        val review = view.findViewById<ImageView>(R.id.imageView5)
+        review.setOnClickListener{
+            val intent = Intent(getActivity(), reviewProcess::class.java)
+            startActivity(intent)
+        }
     }
 }

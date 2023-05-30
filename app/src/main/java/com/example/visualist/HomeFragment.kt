@@ -28,5 +28,11 @@ class HomeFragment : Fragment() {
             startActivity(intent)
         }
 
+        //点击历史下载
+        val history = view.findViewById<ImageView>(R.id.imageView4)
+        history.setOnClickListener{
+            val intent = Intent(getActivity(), historyDownload::class.java)
+            startActivity(intent)
+        }
     }
 }

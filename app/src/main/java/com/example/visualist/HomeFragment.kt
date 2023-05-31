@@ -41,5 +41,13 @@ class HomeFragment : Fragment() {
             val intent = Intent(getActivity(), reviewProcess::class.java)
             startActivity(intent)
         }
+
+        //点击我的作品中的第一张
+        val picture1 = view.findViewById<ImageView>(R.id.imageView14)
+        picture1.setOnClickListener{
+            val intent = Intent(getActivity(), details_of_work::class.java)
+            startActivity(intent)
+        }
+
     }
 }

@@ -24,7 +24,7 @@
 
             <ImageView
                 android:id="@+id/ImageView"
-                android:src="@drawable/camera2"
+                android:src="@mipmap/camera2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
@@ -122,20 +122,20 @@
 
     </FrameLayout>
 
-<!--    +购物车/直接购买操作完成后显示标识-->
+    <!--    +购物车/直接购买操作完成后显示标识-->
     <!-- Snackbar 容器 -->
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-            <!-- 这里将显示添加成功的标识 -->
+        <!-- 这里将显示添加成功的标识 -->
         <ImageView
             android:id="@+id/successAddImageView"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
             android:visibility="invisible"
-            android:src="@drawable/finishadding"/>
+            android:src="@mipmap/finishadding"/>
 
     </FrameLayout>
 
@@ -150,7 +150,7 @@
             android:layout_height="150dp"
             android:layout_gravity="center"
             android:visibility="invisible"
-            android:src="@drawable/finishbuying"/>
+            android:src="@mipmap/finishbuying"/>
 
     </FrameLayout>
 

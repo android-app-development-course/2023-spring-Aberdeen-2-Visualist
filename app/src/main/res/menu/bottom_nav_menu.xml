@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:title=""
+        android:icon="@drawable/ic_camera_white"
+        />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:title=""
+        android:icon="@drawable/ic_forum_white"
+        />
+
+    <item
+        android:id="@+id/navigation_store"
+        android:title=""
+        android:icon="@mipmap/ic_store_white" />
+    <item
+        android:id="@+id/navigation_notifications"
+        android:title=""
+        android:icon="@mipmap/review_process"
+         >
+    </item>
+
+
+</menu>
+

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/weak_gray" /> <!-- 设置为黑色 -->
+    <solid android:color="#EDEDED" /> <!-- 设置为黑色 -->
     <corners android:radius="0dp" /> <!-- 设置圆角半径为 0dp，即直角 -->
     <corners android:radius="30dp" /> <!-- 设置圆角半径为8dp -->
 </shape>
